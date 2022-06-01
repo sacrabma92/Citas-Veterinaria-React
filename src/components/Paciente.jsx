@@ -2,7 +2,7 @@
 
 const Paciente = ({paciente, setPaciente}) => {
 
-    const{ nombre, propietario, email, fecha, sintomas } = paciente
+    const{ nombre, propietario, email, fecha, sintomas, id } = paciente
     
   return (
 <div className="m-3 bg-white shadow-md px-5 py-10 rounded-xl mx-5">
@@ -40,6 +40,6 @@ const Paciente = ({paciente, setPaciente}) => {
   </div>
 </div>
   )
-}
+} 
 
 export default Paciente
