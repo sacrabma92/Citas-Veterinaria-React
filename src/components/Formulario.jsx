@@ -49,9 +49,9 @@ const Formulario = ( { pacientes, setPacientes, paciente, setPaciente } ) => {
       // Editando el Registro
       objetoPaciente.id = paciente.id
 
-      const pacientesActualizado = pacientes.map( pacienteState => {
+      const pacientesActualizado = pacientes.map( pacienteState => 
         pacienteState.id === paciente.id ? objetoPaciente : pacienteState
-      })
+      )
 
       setPacientes(pacientesActualizado)
       setPaciente({})
@@ -61,9 +61,6 @@ const Formulario = ( { pacientes, setPacientes, paciente, setPaciente } ) => {
       setPacientes([...pacientes, objetoPaciente]);
     }
 
-    
-    
-    // console.log(objetoPaciente);
 
     // Reiniciar el form
     setNombre('')
